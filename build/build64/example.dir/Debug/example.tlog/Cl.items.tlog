@@ -1,1 +1,12 @@
+G:\worksave\MindEyeBase\example\alhelpers.c;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\alhelpers.obj
 G:\worksave\MindEyeBase\example\main.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\main.obj
+G:\worksave\MindEyeBase\example\common\alassert.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\alassert.obj
+G:\worksave\MindEyeBase\example\common\alcomplex.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\alcomplex.obj
+G:\worksave\MindEyeBase\example\common\alsem.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\alsem.obj
+G:\worksave\MindEyeBase\example\common\alstring.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\alstring.obj
+G:\worksave\MindEyeBase\example\common\althrd_setname.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\althrd_setname.obj
+G:\worksave\MindEyeBase\example\common\dynload.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\dynload.obj
+G:\worksave\MindEyeBase\example\common\pffft.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\pffft.obj
+G:\worksave\MindEyeBase\example\common\polyphase_resampler.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\polyphase_resampler.obj
+G:\worksave\MindEyeBase\example\common\ringbuffer.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\ringbuffer.obj
+G:\worksave\MindEyeBase\example\common\strutils.cpp;G:\worksave\MindEyeBase\build\build64\example.dir\Debug\strutils.obj

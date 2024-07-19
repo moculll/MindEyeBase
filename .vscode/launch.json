@@ -19,6 +19,7 @@
             "environment": [],
             "console": "internalConsole",
             "preLaunchTask": "build32Debug",
+            "postDebugTask": "copyDLL32",
             "logging": {
                 "moduleLoad": false
             },
@@ -39,6 +40,7 @@
             "environment": [],
             "console": "internalConsole",
             "preLaunchTask": "build64Debug",
+            "postDebugTask": "copyDLL64",
             "logging": {
                 "moduleLoad": false
             },

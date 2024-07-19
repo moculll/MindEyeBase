@@ -48,6 +48,21 @@
             "dependsOn": "config32"
         },
         {
+            "label": "copyDLL32",
+            "type": "shell",
+            "command": "cp",
+            "args": [
+                "${workspaceFolder}/dll/x86/*.dll",
+                "${workspaceFolder}/build/build32/Debug/",
+            ],
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": "build32Debug"
+        },
+        {
             "label": "config64",
             "type": "shell",
             "command": "cmake",
@@ -92,6 +107,21 @@
             },
             "problemMatcher": ["$msCompile"],
             "dependsOn": "config64"
+        },
+        {
+            "label": "copyDLL64",
+            "type": "shell",
+            "command": "cp",
+            "args": [
+                "${workspaceFolder}/dll/x64/*.dll",
+                "${workspaceFolder}/build/build64/Debug/",
+            ],
+            "group": {
+                "kind": "none",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": "build64Debug"
         }
     ]
 }
