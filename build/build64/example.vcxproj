@@ -97,12 +97,12 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NOMINMAX;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;G:\worksave\MindEyeBase\include\common;G:\worksave\MindEyeBase\example\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -119,6 +119,7 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>G:/worksave/MindEyeBase/build/build64/Debug/example.lib</ImportLibrary>
       <ProgramDataBaseFile>G:/worksave/MindEyeBase/build/build64/Debug/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -138,14 +139,14 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;G:\worksave\MindEyeBase\include\common;G:\worksave\MindEyeBase\example\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -162,6 +163,7 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>G:/worksave/MindEyeBase/build/build64/Release/example.lib</ImportLibrary>
       <ProgramDataBaseFile>G:/worksave/MindEyeBase/build/build64/Release/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -181,14 +183,14 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;G:\worksave\MindEyeBase\include\common;G:\worksave\MindEyeBase\example\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -205,6 +207,7 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>G:/worksave/MindEyeBase/build/build64/MinSizeRel/example.lib</ImportLibrary>
       <ProgramDataBaseFile>G:/worksave/MindEyeBase/build/build64/MinSizeRel/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -225,12 +228,12 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;strcasecmp=_stricmp;AL_API_NOEXCEPT17=;NOMINMAX;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;G:\worksave\MindEyeBase\include\common;G:\worksave\MindEyeBase\example\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
@@ -247,6 +250,7 @@
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
       <ImportLibrary>G:/worksave/MindEyeBase/build/build64/RelWithDebInfo/example.lib</ImportLibrary>
       <ProgramDataBaseFile>G:/worksave/MindEyeBase/build/build64/RelWithDebInfo/example.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
@@ -313,10 +317,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="G:\worksave\MindEyeBase\example\alhelpers.c" />
-    <ClCompile Include="G:\worksave\MindEyeBase\example\main.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\alassert.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\alcomplex.cpp" />
+    <ClCompile Include="G:\worksave\MindEyeBase\example\common\alhelpers.c" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\alsem.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\alstring.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\althrd_setname.cpp" />
@@ -325,6 +328,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\polyphase_resampler.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\ringbuffer.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\strutils.cpp" />
+    <ClCompile Include="G:\worksave\MindEyeBase\example\altonegen.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="G:\worksave\MindEyeBase\build\build64\ZERO_CHECK.vcxproj">
