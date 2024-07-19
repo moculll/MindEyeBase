@@ -8,14 +8,17 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/core core)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 add_library(MindEyeBase STATIC ${core})
 
-# x86/x64 output
+# x86/x64 library link and output
 if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+    link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/x64)
     set(OUTPUT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/output/x64)
 else()
+    link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib/x86)
     set(OUTPUT_DIR ${CMAKE_CURRENT_SOURCE_DIR}/output/x86)
 endif()
 set_target_properties(MindEyeBase PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR})
 
 # example executable file compile
 add_executable(example example/main.cpp)
+target_link_libraries(MindEyeBase OpenAL32)
 target_link_libraries(example MindEyeBase)
