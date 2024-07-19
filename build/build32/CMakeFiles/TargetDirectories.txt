@@ -1,0 +1,4 @@
+G:/worksave/MindEyeBase/build/build32/CMakeFiles/MindEyeBase.dir
+G:/worksave/MindEyeBase/build/build32/CMakeFiles/example.dir
+G:/worksave/MindEyeBase/build/build32/CMakeFiles/ALL_BUILD.dir
+G:/worksave/MindEyeBase/build/build32/CMakeFiles/ZERO_CHECK.dir

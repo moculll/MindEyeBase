@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14A3CFD3-76A6-3688-9855-1CF5674DB753}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>G:\worksave\MindEyeBase\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\worksave\MindEyeBase\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/worksave/MindEyeBase/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+G:\SoftWares\qt\Tools\CMake_64\bin\cmake.exe -SG:/worksave/MindEyeBase -BG:/worksave/MindEyeBase/build/build64 --check-stamp-file G:/worksave/MindEyeBase/build/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeRCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\worksave\MindEyeBase\build\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/worksave/MindEyeBase/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+G:\SoftWares\qt\Tools\CMake_64\bin\cmake.exe -SG:/worksave/MindEyeBase -BG:/worksave/MindEyeBase/build/build64 --check-stamp-file G:/worksave/MindEyeBase/build/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeRCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\worksave\MindEyeBase\build\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/worksave/MindEyeBase/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+G:\SoftWares\qt\Tools\CMake_64\bin\cmake.exe -SG:/worksave/MindEyeBase -BG:/worksave/MindEyeBase/build/build64 --check-stamp-file G:/worksave/MindEyeBase/build/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeRCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\worksave\MindEyeBase\build\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/worksave/MindEyeBase/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+G:\SoftWares\qt\Tools\CMake_64\bin\cmake.exe -SG:/worksave/MindEyeBase -BG:/worksave/MindEyeBase/build/build64 --check-stamp-file G:/worksave/MindEyeBase/build/build64/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeRCInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Compiler\MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\Windows.cmake;G:\SoftWares\qt\Tools\CMake_64\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeCXXCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeRCCompiler.cmake;G:\worksave\MindEyeBase\build\build64\CMakeFiles\3.29.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\worksave\MindEyeBase\build\build64\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\worksave\MindEyeBase\build\build64\ZERO_CHECK.vcxproj">
+      <Project>{647A59F7-FF63-3751-B959-D0D3794AAC76}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\worksave\MindEyeBase\build\build64\MindEyeBase.vcxproj">
+      <Project>{4FC5AEAA-5F5F-3A02-B0D4-C7D329271AEE}</Project>
+      <Name>MindEyeBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\worksave\MindEyeBase\build\build64\example.vcxproj">
+      <Project>{E0E41145-A089-30DB-B318-A9D924F061D5}</Project>
+      <Name>example</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

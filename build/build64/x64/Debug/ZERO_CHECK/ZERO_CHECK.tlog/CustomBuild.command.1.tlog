@@ -1,0 +1,10 @@
+^G:\WORKSAVE\MINDEYEBASE\BUILD\BUILD64\CMAKEFILES\863BFB0980CB8F9DF9DB2BB2B4C964A0\GENERATE.STAMP.RULE
+setlocal
+G:\SoftWares\qt\Tools\CMake_64\bin\cmake.exe -SG:/worksave/MindEyeBase -BG:/worksave/MindEyeBase/build/build64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/worksave/MindEyeBase/build/build64/MindEyeBase.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

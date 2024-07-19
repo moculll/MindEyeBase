@@ -1,0 +1,97 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "config32",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                ".",
+                "-G \"Visual Studio 17 2022\"",
+                "-A Win32",
+                "-B ${workspaceFolder}/build/build32"
+            ],
+            "problemMatcher": ["$msCompile"],
+        },
+        {
+            "label": "build32Release",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/build32",
+                "--config",
+                "Release"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": "config32"
+        },
+        {
+            "label": "build32Debug",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/build32",
+                "--config",
+                "Debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": "config32"
+        },
+        {
+            "label": "config64",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                ".",
+                "-G \"Visual Studio 17 2022\"",
+                "-A x64",
+                "-B ${workspaceFolder}/build/build64"
+            ],
+            "problemMatcher": ["$msCompile"],
+        },
+        {
+            "label": "build64Release",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/build64",
+                "--config",
+                "Release"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": "config64"
+        },
+        {
+            "label": "build64Debug",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "${workspaceFolder}/build/build64",
+                "--config",
+                "Debug"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"],
+            "dependsOn": "config64"
+        }
+    ]
+}

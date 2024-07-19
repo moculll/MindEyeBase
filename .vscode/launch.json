@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "msvc",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/build32/Debug/example.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/Fe:"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build32Debug",
+            "logging": {
+                "moduleLoad": false
+            },
+            "visualizerFile": "c:\\Users\\Administrator\\AppData\\Roaming\\Code\\User\\workspaceStorage\\f135dc301f8033aa750c577d5da878b1\\tonka3000.qtvsctools\\qt.natvis.xml"
+        },
+        {
+            "name": "msvc",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/build64/Debug/example.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/Fe:"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "console": "internalConsole",
+            "preLaunchTask": "build64Debug",
+            "logging": {
+                "moduleLoad": false
+            },
+            "visualizerFile": "c:\\Users\\Administrator\\AppData\\Roaming\\Code\\User\\workspaceStorage\\f135dc301f8033aa750c577d5da878b1\\tonka3000.qtvsctools\\qt.natvis.xml"
+        }
+    ]
+}
