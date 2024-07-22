@@ -54,6 +54,8 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "windows.h": "c"
+        "windows.h": "c",
+        "string.h": "c",
+        "sndfile.h": "c"
     }
 }

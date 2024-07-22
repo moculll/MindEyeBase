@@ -34,7 +34,7 @@
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\strutils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="G:\worksave\MindEyeBase\example\altonegen.c">
+    <ClCompile Include="G:\worksave\MindEyeBase\example\almultireverb.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -328,7 +328,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\polyphase_resampler.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\ringbuffer.cpp" />
     <ClCompile Include="G:\worksave\MindEyeBase\example\common\strutils.cpp" />
-    <ClCompile Include="G:\worksave\MindEyeBase\example\altonegen.c" />
+    <ClCompile Include="G:\worksave\MindEyeBase\example\almultireverb.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="G:\worksave\MindEyeBase\build\build64\ZERO_CHECK.vcxproj">

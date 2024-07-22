@@ -25,6 +25,7 @@ aux_source_directory(${CMAKE_CURRENT_SOURCE_DIR}/example/common common_srcs)
 
 # set one example you'd like to compile
 set(example_srcs ${CMAKE_CURRENT_SOURCE_DIR}/example/almultireverb.c)
+#set(example_srcs ${CMAKE_CURRENT_SOURCE_DIR}/example/MindEyeBase.cpp)
 #set(example_srcs ${CMAKE_CURRENT_SOURCE_DIR}/example/alconvolve.c)
 #set(example_srcs ${CMAKE_CURRENT_SOURCE_DIR}/example/aldirect.cpp)
 #set(example_srcs ${CMAKE_CURRENT_SOURCE_DIR}/example/alffplay.cpp)
